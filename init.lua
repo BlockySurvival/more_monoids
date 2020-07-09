@@ -1,4 +1,6 @@
 more_monoids = {}
+local modname = minetest.get_current_modname()
+local modpath = minetest.get_modpath(modname)
 
-dofile(minetest.get_modpath(minetest.get_current_modname() .. "/monoids/sunlight.lua"))
-dofile(minetest.get_modpath(minetest.get_current_modname() .. "/monoids/player_tag.lua"))
+dofile(modpath .. "/monoids/sunlight.lua")
+dofile(modpath .. "/monoids/player_tag.lua")
